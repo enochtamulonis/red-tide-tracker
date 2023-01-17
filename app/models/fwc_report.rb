@@ -1,0 +1,2 @@
+class FwcReport < ApplicationRecord
+end
