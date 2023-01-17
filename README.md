@@ -1,24 +1,19 @@
 # README
+### Prerequisites
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby 3.2.0
+* Rails 7.0.4
+* Postgresql
+* Redis
 
-Things you may want to cover:
+### Installation
 
-* Ruby version
+1. Download repo to local environment 
+  
+  `git clone https://github.com/enochtamulonis/red-tide-tracker`
+2. Setup database 
 
-* System dependencies
+ `rails db:setup` 
+3. Start server 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  `bin/dev`
