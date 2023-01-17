@@ -1,0 +1,17 @@
+<div>
+  <div class="pt-16 px-8">
+    <h1 class="font-bold text-4xl">Red tide tracker </h1>
+    <p>The easy to understand tracker for red tide at your local beaches </p>
+  </div>
+
+  <div class="mt-16 max-w-3xl mx-auto rounded-sm shadow-md p-3">
+    <%= form_with url: "/beaches" do |f| %>
+      <%= f.label :beach, "Search for a beach to check levels" %>
+      <%= f.text_field :beach, class: "block w-full rounded-sm shadow-md rounded-xl" %>
+    <% end %>
+  </div>
+
+  <div class="mt-36 h-[70vh] overflow-hidden">
+    <%= image_tag "red-tide.jpg", class: "object-cover object-top w-full h-full opacity-75" %>
+  </div>
+</div>
